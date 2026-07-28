@@ -390,7 +390,7 @@ class Pipeline:
 
         # If all Mv values are within 0.5mag, the bins will be empty. Create at least
         # two in this case.
-        if not bins:
+        if bins is None or len(bins) == 0:
             bins = [min(self.skybot.Mv), min(self.skybot.Mv) + 0.5]
 
         counts = pd.cut(self.skybot["Mv"], bins).value_counts()

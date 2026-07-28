@@ -105,8 +105,8 @@ def _query_skybot_per_image(epoch, ra, dec, fov, obs_code):
     }
 
     # new service url:
-    # https://ssp.imcce.fr/webservices/skybot/api/conesearch.php?
-    url = "http://vo.imcce.fr/webservices/skybot/skybotconesearch_query.php?"
+    #url = "http://vo.imcce.fr/webservices/skybot/skybotconesearch_query.php?"
+    url = "https://ssp.imcce.fr/webservices/skybot/api/conesearch.php?"
     url = "&".join([url, *["=".join([k, v]) for k, v in obs.items()]])
 
     # log.debug(url)
