@@ -18,7 +18,7 @@ setup(
     keywords=["astronomy astrophysics solar-system data pipeline"],
     install_requires=[
         "astropy==6.0.1",
-        "pandas>=0.23.0",
+        "pandas==2.1.4",
         "matplotlib",
         "numpy",
         "sbpy",
