@@ -17,7 +17,7 @@ setup(
     packages=find_packages(exclude=["contrib", "docs", "tests"]),
     keywords=["astronomy astrophysics solar-system data pipeline"],
     install_requires=[
-        "astropy",
+        "astropy==6.0.1",
         "pandas>=0.23.0",
         "matplotlib",
         "numpy",
